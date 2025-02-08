@@ -1,5 +1,7 @@
 package ru.skypro.homework.controller;
 
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,9 @@ import ru.skypro.homework.dto.ExtendedAdDTO;
 /**
  * Контроллер для управления объявлениями.
  */
+@Slf4j
+@AllArgsConstructor
+@CrossOrigin("http://localhost:3000")
 @RestController
 @RequestMapping("/ads")
 public class AdsController {
