@@ -1,11 +1,18 @@
 package ru.skypro.homework.dto;
 
-import lombok.Data;
-
 /**
  * DTO для создания или обновления комментария.
  */
-@Data
 public class CreateOrUpdateCommentDTO {
     private String text;
+
+    public CreateOrUpdateCommentDTO() {
+    }
+
+    public String getText() {
+        return text;
+    }
+    public void setText(String text) {
+        this.text = text;
+    }
 }
